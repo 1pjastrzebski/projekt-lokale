@@ -1,0 +1,184 @@
+.field {
+  padding: 2rem;
+  border-radius: 3px;
+  margin: 3% 0%;
+  font-size: 1.5em;
+  justify-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.locals {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5em;
+}
+.locals_mini {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0.5em;
+}
+.lokal {
+  display: flex;
+}
+.lokal > p {
+  margin: 0 5px;
+}
+.local {
+  background-color: #444451;
+  margin: 1px;
+  text-align: center;
+  font-size: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+}
+
+.l {
+  height: 2.2em;
+  width: 2.8em;
+}
+.mini {
+  height: 1em;
+  width: 1.2em;
+}
+
+.reserved {
+  background-color: rgb(211, 211, 18);
+  color: black;
+}
+.bought {
+  background-color: red;
+  color: black;
+}
+.button {
+  font-size: 1em;
+  margin: auto;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 6px;
+  padding: 4px 6px;
+  text-decoration: none;
+  color: black;
+  width: 60%;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+  animation-name: btn;
+  animation-duration: 0.3s;
+}
+@keyframes btn {
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: black;
+    color: white;
+  }
+}
+table,
+.th,
+.td {
+  border: 1px solid black;
+  padding: 3px;
+}
+table {
+  font-size: 18px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  font-size: 1.2em;
+}
+
+@media (min-width: 650px) {
+  main {
+    display: grid;
+  }
+  .field {
+    margin: 3% 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .local {
+    margin: 8px;
+    font-size: 24px;
+  }
+  .l {
+    height: 2.4em;
+    width: 3em;
+  }
+  .p {
+    font-size: 25px;
+  }
+  .button {
+    font-size: 24px;
+    width: 40%;
+  }
+  .lokal {
+    align-items: center;
+    font-size: 25px;
+  }
+  .lokal:hover {
+    font-size: 30px;
+  }
+  table * {
+    font-size: 22px;
+  }
+  .tab{
+    width: 590px;
+  }
+}
+@media (min-width: 800px) {
+  .local {
+    margin: 8px;
+    font-size: 27px;
+  }
+  .l {
+    height: 2.4em;
+    width: 3em;
+  }
+  .button {
+    font-size: 30px;
+  }
+  .p {
+    font-size: 32px;
+  }
+  .lokal {
+    font-size: 26px;
+  }
+  table * {
+    font-size: 25px;
+  }
+  .tab{
+    width: 647px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .local {
+    margin: 8px;
+    font-size: 35px;
+  }
+  .l {
+    transition: font-size 0.2s;
+  }
+  .l:hover {
+    font-size: 40px;
+  }
+  .l {
+    height: 2.4em;
+    width: 3em;
+  }
+  .tab{
+    width: 800px;
+  }
+}
+@media (max-width: 450px) {
+  .local {
+    font-size: 22px;
+  }
+}

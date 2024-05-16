@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+  
+    <link rel="stylesheet" href="slideshow.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="slideshow.js" defer></script>
+  </head>
+  <body>
+    <div class="container-none" id="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top p-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SuperLokale</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">O inwestycji</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="locals.html">Lokale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inwestor.html">Inwestor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-form.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section class="slideshow">
+          <div class="slide">
+            <div class="slideNum">1/5</div>
+            <img src="szerogwiec1.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <div class="slideNum">2/5</div>
+            <img src="szeregowiec3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <div class="slideNum">3/5</div>
+            <img src="szeregowiec2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <div class="slideNum">4/5</div>
+            <img src="szeregowiec4.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <div class="slideNum">5/5</div>
+            <img src="szeregowiec6.jpg" alt="" />
+          </div>
+        </section>
+        <table>
+          <tr>
+            <td>
+              <img
+                class="demo cursor"
+                src="szerogwiec1.jpg"
+                alt=""
+                onclick="currentSlide(1)"
+              />
+            </td>
+            <td>
+              <img
+                class="demo cursor"
+                src="szeregowiec3.jpg"
+                alt=""
+                onclick="currentSlide(2)"
+              />
+            </td>
+            <td>
+              <img
+                class="demo cursor"
+                src="szeregowiec2.jpg"
+                alt=""
+                onclick="currentSlide(3)"
+              />
+            </td>
+            <td>
+              <img
+                class="demo cursor"
+                src="szeregowiec4.jpg"
+                alt=""
+                onclick="currentSlide(4)"
+              />
+            </td>
+            <td>
+              <img
+                class="demo cursor"
+                src="szeregowiec6.jpg"
+                alt=""
+                onclick="currentSlide(5)"
+              />
+            </td>
+          </tr>
+        </table>
+      </main>
+      <footer class="bg-secondary-subtle">
+        <p>&copy Filip Jastrzębski 2P</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

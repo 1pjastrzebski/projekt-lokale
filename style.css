@@ -1,0 +1,58 @@
+main {
+  background-image: url("image/szeregowiec5.jpg");
+  background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+}
+main > h1 {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+}
+main > a {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+}
+@media (max-width:1000px){
+  main{
+    height: 800px;
+  }
+  main > h1{
+    font-size: 50px;
+  }
+  main > a{
+    font-size: 30px;
+    top: 43%;
+  }
+}
+@media (max-width: 500px){
+  main{
+    height: 800px;
+  }
+  main > h1{
+    font-size: 45px;
+  }
+  main > a{
+    font-size: 25px;
+    top: 45%;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+
+  font-size: 1.2em;
+}
